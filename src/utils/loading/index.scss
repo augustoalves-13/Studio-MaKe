@@ -1,0 +1,47 @@
+.main-loading{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EFE9E6;
+
+    img{
+        height: 20%;
+        animation: loader 3.1s linear;
+    }
+
+    @keyframes loader {
+        0%{
+            transform: scale(0.8);
+        }
+
+        25%{
+            transform: scale(1.3);
+        }
+
+        
+        50%{
+            transform: scale(1);
+        }
+
+        75%{
+            transform: scale(1.3);
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0;
+        }
+    }
+}
+
+.loader-enable{
+    transition: 1s;
+}
+
+.loader-disable{
+    opacity: 0;
+}
